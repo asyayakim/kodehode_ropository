@@ -1,0 +1,50 @@
+body {
+  background: rgb(7, 7, 28);
+  color: rgb(247, 239, 230);
+  height: 300svh;
+  margin: 0;
+}
+
+a {
+  color: rgb(237, 250, 255);
+  text-decoration: none;
+  margin-left: 20px;
+}
+a:hover,
+a:focus {
+  color: #969a9c;
+  transition: 0.3s; 
+
+}
+footer {
+  display: flex;
+  justify-content: center;
+  color: rgb(98, 118, 141);
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+article {
+  margin-inline: auto;
+  border-color: rgb(224, 231, 232);
+  padding: 20px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+nav {
+  width: 100%;
+  background-color: rgb(46, 47, 51);
+  font-size: 5vh;
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
