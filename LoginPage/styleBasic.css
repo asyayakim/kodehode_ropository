@@ -1,0 +1,120 @@
+:root {
+    --primary-blue: #E3F2FD;
+    --secondary-blue: #BBDEFB;
+    --accent-blue: #90CAF9;
+    --text-color: #1A237E;
+    --background-color: #F5F5F5;
+    --primary-background: #f6fbff;
+}
+p {
+    color: var(--text-color);
+    font-size: small;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-background);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-blue);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.job-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+    padding-top: 0;
+    margin-top: 2rem; 
+    padding-left: 6rem;
+    padding-right: 6rem;
+    transition: margin-top 0.3s ease;
+}
+.job h3 {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    word-wrap: break-word; /* Ensures long words break and wrap into next line */
+    overflow-wrap: break-word; /* Handles long words gracefully in any browser */
+    white-space: normal; /* Ensures it wraps naturally */
+}
+.logo {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.job {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-background);
+    padding: 0.5rem;
+    margin-top: auto;
+    max-width: fit-content;
+     overflow: hidden;
+}
+.content {
+    display: grid;
+}
+.navigation {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+nav {
+    justify-content: space-around;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.image-job {
+    display: block;
+    object-fit: cover;
+    max-width: 100px;
+    border-radius: 8px;
+}
+/*
+nav a:hover {
+    background-color: var(--accent-blue);
+}
+*/
+@media (max-width: 768px) {
+    main {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    nav {
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+    }
+}
