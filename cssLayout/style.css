@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.name {
+  font-size: 1.5rem;
+  font-family: "Kanit", serif;
+  font-weight: 700;
+    color: #1a2a42;
+
+}
+body {
+  min-height: 100vh;
+}
+
+img {
+    margin-top: 50%;
+  max-width: 140px;
+  display: block;
+  border-radius: 12%;
+  margin-left: 20px;
+}
+.hero-cards {
+    border-radius: 15px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1 {
+  font-family: "Bangers", serif;
+  text-align: center;
+  margin: 50px;
+  font-size: 2.5rem;
+  color: #1a2a42;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+}
+.card-container {
+  background-color: #f9fcff;
+  border-radius: 10px;
+  color: #1a2a42;
+  display: flex;
+  max-width: 500px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-container {
+  padding: 30px 40px;
+}
+
+.card-details {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+  margin-block: 20px;
+}
+.value {
+  font-weight: 900;
+  color: #1a2a42;
+}
+.label,
+.occupation {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(20, 86, 156);
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+}
